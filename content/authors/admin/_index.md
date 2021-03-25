@@ -8,8 +8,8 @@ interests:
   - 3D detection
   - 3D scene understanding
 social:
-  - icon: graduation-cap
-    icon_pack: fas
+  - icon: google-scholar
+    icon_pack: ai
     link: https://scholar.google.com/citations?user=2uEyZJQAAAAJ
   - icon: github
     icon_pack: fab
