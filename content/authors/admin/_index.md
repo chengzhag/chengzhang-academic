@@ -14,6 +14,9 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/pidan1231239
+  - icon: envelope
+    icon_pack: fas
+    link: mailto:chengzhag@std.uestc.edu.cn
 organizations:
   - name: UESTC
     url: https://en.uestc.edu.cn/
