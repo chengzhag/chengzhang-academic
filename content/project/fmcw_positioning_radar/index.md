@@ -52,7 +52,9 @@ Code and document [here](https://github.com/pidan1231239/fmcw_positioning_radar)
 
 ### FMCW
 
-Frequency-modulated continuous-wave radar (FM-CW) – also called continuous-wave frequency-modulated (CWFM) radar – is a short-range measuring radar set capable of determining distance ([Continuous-wave radar wiki](https://en.wikipedia.org/wiki/Continuous-wave_radar)). If you have no idea about it, the tutorial below is a good starting point.
+> Frequency-modulated continuous-wave radar (FM-CW) – also called continuous-wave frequency-modulated (CWFM) radar – is a short-range measuring radar set capable of determining distance ([Continuous-wave radar wiki](https://en.wikipedia.org/wiki/Continuous-wave_radar)). 
+
+If you have no idea about it, the tutorial below is a good starting point.
 - [Frequency-Modulated Continuous-Wave Radar](http://www.radartutorial.eu/02.basics/Frequency%20Modulated%20Continuous%20Wave%20Radar.en.html) ([FMCW Radar](http://www.radartutorial.eu/02.basics/Frequency%20Modulated%20Continuous%20Wave%20Radar.en.html)): a brief introduction of the principle of FMCW
 - [Build a Small Radar System Capable of Sensing Range, Doppler, and Synthetic Aperture Radar Imaging](https://ocw.mit.edu/resources/res-ll-003-build-a-small-radar-system-capable-of-sensing-range-doppler-and-synthetic-aperture-radar-imaging-january-iap-2011/index.htm): an MIT course to build an FMCW radar yourself
 - [GUEST POST: TRY RADAR FOR YOUR NEXT PROJECT](https://hackaday.com/2014/02/24/guest-post-try-radar-for-your-next-project/): an article written by the instructor of the course above
@@ -60,7 +62,7 @@ Frequency-modulated continuous-wave radar (FM-CW) – also called continuous-wav
 
 ### SDR
 
-[Software-defined radio](https://en.wikipedia.org/wiki/Software-defined_radio) (SDR) is a radio communication system where components that have been traditionally implemented in hardware (e.g. mixers, filters, amplifiers, modulators/demodulators, detectors, etc.) are instead implemented by means of software on a personal computer or embedded system.
+> [Software-defined radio](https://en.wikipedia.org/wiki/Software-defined_radio) (SDR) is a radio communication system where components that have been traditionally implemented in hardware (e.g. mixers, filters, amplifiers, modulators/demodulators, detectors, etc.) are instead implemented by means of software on a personal computer or embedded system.
 
 The project uses a USRP N210 with an LFRX  daughter board. SDR is not an important part of this project cause the RF front end are made with RF modules and the FMCW generator is build separately. The USRP here acts as a role of ADC and is accessed via Simulink. See how to use a USRP with Simulink below:
 - [USRP® Support Package from Communications System Toolbox](https://ww2.mathworks.cn/hardware-support/usrp.html?s_tid=srchtitle): Matlab toolbox for USRP
@@ -80,9 +82,10 @@ The hardware design can be introduced in two parts, RF front end and FMCW genera
 - VCO: [ZX95-3800A+](https://www.minicircuits.com/WebStore/modelSearch.html?model=ZX95-3800A%2B)
 - Power splitter: [ZX10-2-42+](https://www.minicircuits.com/WebStore/modelSearch.html?model=ZX10-2-42%2B)
 - Attenuator: [VAT-3+](https://www.minicircuits.com/WebStore/modelSearch.html?model=VAT-3%2B)
+
 The final design works in 2.7 GHz to 3.7 GHz to avoid 2.4 GHz band.
 
-![FMCW generator](FMCW信号发生.png)
+{{< figure src="FMCW信号发生.png" caption="FMCW generator" >}}
 
 ### RF front end
 - PA and LNA: [ZX60-53LNB+](https://www.minicircuits.com/WebStore/modelSearch.html?model=ZX60-53LNB%2B)
@@ -91,9 +94,10 @@ The final design works in 2.7 GHz to 3.7 GHz to avoid 2.4 GHz band.
 - Mixer: [ZX05-43+](https://www.minicircuits.com/WebStore/modelSearch.html?model=ZX05-43%2B)
 - Switch: ADRF5040
 - mbed board: ST NUCLEO-L476RG
+
 The mbed board detects the trigger edge and overlay current antenna pair number after the edge. The baseband signal from the mixer and coded sync signal from mbed board are sent into the same LFRX board to achieve synchronization, then will be analyzed in Simulink in real time.
 
-![RF front end](FMCW射频前端.png)
+{{< figure src="FMCW射频前端.png" caption="RF front end" >}}
 
 ## Software
 
@@ -107,13 +111,14 @@ The ADF4159 evaluation board is configured using [ADF4158 and ADF4159 Evaluation
 - Ramp frequency: 2000 Hz
 - Charge pump: 1.25 mA
 - Muxout: Digital lock Detect. It is used as a sync signal to trigger the switching of antennas.
+
 The 4 Tx and 12 Rx makes up 4*12 antenna pairs. With ramp frequency of 2000 Hz, every antenna pair is switched to for 41.7 times per second.
 
 ### mbed code
 
 The mbed board switches antenna pairs after every trigger edge from the ADF4159 Muxout pin. And it also overlay the antenna pair number to the sync signal. Considering that MCU has some unstable reaction delay between the trigger edge of the sync signal and the first down edge of the output, the MCU first pulls down the sync signal then output bits of the number. In this way, the down edge of the overlaid signal has no jitter. Code of mbed board is [here](https://github.com/pidan1231239/fmcw_positioning_radar/tree/master/mcu).
 
-![Antenna switching timing diagram](IMG_20180623_094926.jpg)
+{{< figure src="IMG_20180623_094926.jpg" caption="Antenna switching timing diagram" >}}
 
 ### Simulink model
 
@@ -123,41 +128,41 @@ All the models are in the [simulink](https://github.com/pidan1231239/fmcw_positi
 
 In the experimental stage, I built a system with 1 Tx and 3 Rx.
 
-![1TX3RX system](IMG_20180131_161431.jpg)
+{{< figure src="IMG_20180131_161431.jpg" caption="1TX3RX system" >}}
 
 The overlaid sync signal is shown below.
 
-![sync signal](IMG_20180131_103642.jpg)
+{{< figure src="IMG_20180131_103642.jpg" caption="Sync signal" >}}
 
 1D imaging of each antenna pair is shown below. Tested with a person walking away then walking back. The d axis shows the round trip of the radar signal.
 
-![1d imaging of each antenna pair](三根天线瀑布图.jpg)
+{{< figure src="三根天线瀑布图.jpg" caption="1d imaging of each antenna pair" >}}
 
 The system was then expanded to 1 Tx and 8 Rx. In this stage, 2D imaging can be done.
 
-![1TX8RX system](IMG_20180205_100729.jpg)
+{{< figure src="IMG_20180205_100729.jpg" caption="1TX8RX system" >}}
 
 The following image is the heat map captured from the 1Tx8Rx system. The x-axis indicates angle from left to right. y-axis indicates the round distance of the radar signal. This illustration was made in a hurry so there is no complete annotation.
 
-![1Tx8Rx heatmap](Image.png)
+{{< figure src="Image.png" caption="1Tx8Rx top-down heatmap" >}}
 
 After that, the system was expanded to 4 Tx and 12 Rx. In this stage, 3D imaging can be done.
 
-![4TX12RX system](1522473970150_48c5a36482b4463d3e4516373d3e01c5.jpg)
+{{< figure src="1522473970150_48c5a36482b4463d3e4516373d3e01c5.jpg" caption="4TX12RX system" >}}
 
 The following gif shows the 3D imaging projected to xz-plane of a person holding a corner reflector and drawing a circle in the air.
 
-![heatmap front view](yLoCut_200kHz_800rps_1rpf_4t12r_ztest_circle_reflector.gif)
+{{< figure src="yLoCut_200kHz_800rps_1rpf_4t12r_ztest_circle_reflector.gif" caption="Heatmap front view" >}}
 
 The gif below shows the 2D imaging of xy-plane with target tracking. The target person was walking around in the distance of 3 meters. The y-axis indicates the round distance of radar signal.
 
-![heatmap top-down view](heatMapTarget.gif)
+{{< figure src="heatMapTarget.gif" caption="Heatmap top-down view" >}}
 
 I tried to extract the z-axis coordinate of person target. However, because of the reflection angle mentioned in [RF-Capture](http://rfcapture.csail.mit.edu/), and the intensified effect by the lower frequency band of our system, the height of a person cannot be accurately detected. 
 The image shows the heat map of the target in the z-axis changing with time. The target is walking in place then squats in the 10th second. As shown below, the height drops several times when the target moves.
 
-![heatmap z](Image2.png)
+{{< figure src="Image2.png" caption="Heatmap z" >}}
 
 The final work was put on a cart.
 
-![final system](IMG_20180416_155121.jpg)
+{{< figure src="IMG_20180416_155121.jpg" caption="Final system" >}}
