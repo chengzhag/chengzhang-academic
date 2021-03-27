@@ -52,7 +52,7 @@ Ball on Small Plate is built with a Raspberry Zero, a camera, two servos, a STM3
 
 Ball on Small Plate project is a work of team. The other two teammates are [shicaiwei123](https://github.com/shicaiwei123) and [yoyolalala](https://github.com/yoyolalala). 
 
-Code and document [here](https://github.com/pidan1231239/ball_on_plate). Platform details [here]().
+Code and document [here](https://github.com/pidan1231239/ball_on_plate). Platform details [here]({{< relref "../ball_on_big_plate" >}}).
 
 ## Demo
 

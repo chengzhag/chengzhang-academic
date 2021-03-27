@@ -83,9 +83,9 @@ Specifically in this project, according to the contest requirements, the system 
 I was responsible for building the structure and programming STM32 and Raspberry Pi. Although I had got some experience with programming, I barely knew the basics of control system. However, I chose the control system direction to prepare because of my interest in it.
 
 In the preparation process, we learned from five projects, three of which are listed below.
-- [Rotary Inverted Pendulum]()
-- [Ball on Beam]()
-- [Ball on Small Plate]()
+- [Rotary Inverted Pendulum]({{< relref "../rotary_inverted_pendulum" >}})
+- [Ball on Beam]({{< relref "../ball_on_beam" >}})
+- [Ball on Small Plate]({{< relref "../ball_on_small_plate" >}})
 
 Sadly, I've got no video demo of the final work since we were too busy moving forward. So let's jump into the details of the design.
 
@@ -101,7 +101,7 @@ I made use of a C++ API written for STM32 named [ebox](https://github.com/eboxma
 
 ## Mechanical structure
 
-The final work uses a PCB motherboard made in [Ball on Small Plate project]() to put the electronic modules together. 
+The final work uses a PCB motherboard made in [Ball on Small Plate project]({{< relref "../ball_on_small_plate" >}}) to put the electronic modules together. 
 
 {{< figure src="3.jpg" caption="PCB mother board" >}}
 
@@ -109,7 +109,7 @@ The 65cm*65cm plate is made of light wood laminate board.
 
 {{< figure src="ball_on_big_plate_camera_support.jpg" caption="The plate" >}}
 
-There are ribs below the plate to support it. The dynamic structure of the plate is same as [Ball on small plate]().
+There are ribs below the plate to support it. The dynamic structure of the plate is same as [Ball on small plate]({{< relref "../ball_on_small_plate" >}}).
 
 {{< figure src="ball_on_big_plate_under_the_plate.jpg" caption="Under the plate" >}}
 
@@ -121,7 +121,7 @@ Design documents of the reinforcing ribs and others are also on the [GitHub page
 
 {{< figure src="ball_on_big_plate_ball_rod.jpg" caption="Servo with connecting rod" >}}
 
-The camera is supported by carbon fiber tubes like in [Ball on small plate](). And the same LED circle is installed around the camera.
+The camera is supported by carbon fiber tubes like in [Ball on small plate]({{< relref "../ball_on_small_plate" >}}). And the same LED circle is installed around the camera.
 
 {{< figure src="ball_on_big_plate_led.jpg" caption="LED around camera" >}}
 

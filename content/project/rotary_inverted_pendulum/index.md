@@ -52,7 +52,7 @@ Rotary Inverted Pendulum is built with an encoder, a brush motor, a STM32F103 bo
 
 Rotary Inverted Pendulum project is a work of team. The other two teammates are [shicaiwei123](https://github.com/shicaiwei123) and [yoyolalala](https://github.com/yoyolalala). 
 
-Code and document [here](https://github.com/pidan1231239/inverted_pendulum). Platform details [here]().
+Code and document [here](https://github.com/pidan1231239/inverted_pendulum). Platform details [here]({{< relref "../ball_on_big_plate" >}}).
 
 ## Demo
 
