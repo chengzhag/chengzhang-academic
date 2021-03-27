@@ -44,6 +44,23 @@ url_video: ""
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
 slides: ""
+
+gallery_item:
+- album: xian
+  image: IMG_20170831_144038_01.jpg
+  caption: Final test in Jiaotong University
+- album: xian
+  image: IMG_20170830_175531.jpg
+  caption: On the way to the final test
+- album: xian
+  image: IMG_20170831_163601.jpg
+  caption: DaYanTa station of Xi'an metro Line 3
+- album: xian
+  image: IMG_20170831_164508.jpg
+  caption: Dayan Tower of Xi'an
+- album: xian
+  image: IMG_20170831_190316.jpg
+  caption: Mutton soup with bread of Xi'an
 ---
 
 ## Introduction
