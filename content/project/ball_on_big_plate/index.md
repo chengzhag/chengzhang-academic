@@ -116,7 +116,9 @@ There are ribs below the plate to support it. The dynamic structure of the plate
 Design documents of the reinforcing ribs and others are also on the [GitHub page](https://github.com/pidan1231239/ball_on_big_plate).
 
 {{< figure src="650板加强筋激光切割.dwg.png" caption="Reinforcing ribs" >}}
+
 {{< figure src="ball_on_big_plate_universal_joint.jpg" caption="Cardan joint" >}}
+
 {{< figure src="ball_on_big_plate_ball_rod.jpg" caption="Servo with connecting rod" >}}
 
 The camera is supported by carbon fiber tubes like in [Ball on small plate](). And the same LED circle is installed around the camera.
