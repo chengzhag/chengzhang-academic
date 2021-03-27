@@ -34,7 +34,7 @@ image:
 #   name: Follow
 #   url: https://twitter.com/georgecushen
 url_code: "https://github.com/pidan1231239/ball_on_big_plate"
-url_pdf: "https://github.com/pidan1231239/chengzhang-academic/tree/master/content/project/ball_on_big_plate/报告_平板小球.pdf"
+url_pdf: ""
 url_slides: ""
 url_video: ""
 
