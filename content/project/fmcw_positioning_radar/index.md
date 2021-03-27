@@ -1,16 +1,30 @@
 ---
 title: FMCW Positioning Radar
+
+# Summary for listings and search engines
 summary: A FMCW Radar with 4 transmitting antennas and 12 receive antennas working within the 2.7 GHz - 3.7 GHz band that can locate a person in the same room with accuracy of 20 cm.
+
 tags:
 - Radar
+
+# Date published
 date: "2018-05-28T00:00:00Z"
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: false
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
 
+# Featured image
+# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 image:
   caption: The whole system on a cart
   focal_point: Smart
+  preview_only: false
 
 # links:
 # - icon: twitter
