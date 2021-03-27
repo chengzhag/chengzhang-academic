@@ -72,8 +72,7 @@ I was responsible for building the structure and programming STM32 and Raspberry
 The final work has been handed in to our school and there will be no plan to write a detailed document for it. This page tells the story behind it.
 
 > The ball-on-plate system is a promoted version of the traditional ball-on-beam control problem. The problem consists of a plate which its deviation can be manipulated in two perpendicular directions. The goal is to carry the ball moving on the plate to a desired position, that is to control a freely rolling ball on a specific position or moving on a trajectory on the plate. - [Modelling and Control of Ball-Plate System](http://web.engr.illinois.edu/~khashab2/files/2011_LinearControl/16.pdf)
-> ![ball-on-plate system](ball-on-plate_system.png)
-
+> {{< figure src="ball-on-plate_system.png" caption="Ball-on-plate system" >}}
 
 Specifically in this project, according to the contest requirements, the system is supposed to move a ball between any two of nine evenly distributed circles drawn on the plate and avoids other circles. The plate must have a size around 65cm*65cm. The [document](滚球控制系统（B题）.pdf) shows the distribution of the circles.
 
@@ -84,7 +83,6 @@ Specifically in this project, according to the contest requirements, the system 
 I was responsible for building the structure and programming STM32 and Raspberry Pi. Although I had got some experience with programming, I barely knew the basics of control system. However, I chose the control system direction to prepare because of my interest in it.
 
 In the preparation process, we learned from five projects, three of which are listed below.
-
 - [Rotary Inverted Pendulum]()
 - [Ball on Beam]()
 - [Ball on Small Plate]()
@@ -105,33 +103,33 @@ I made use of a C++ API written for STM32 named [ebox](https://github.com/eboxma
 
 The final work uses a PCB motherboard made in [Ball on Small Plate project]() to put the electronic modules together. 
 
-![PCB mother board](3.jpg)
+{{< figure src="3.jpg" caption="PCB mother board" >}}
 
 The 65cm*65cm plate is made of light wood laminate board.
 
-![plate](ball_on_big_plate_camera_support.jpg)
+{{< figure src="ball_on_big_plate_camera_support.jpg" caption="The plate" >}}
 
 There are ribs below the plate to support it. The dynamic structure of the plate is same as [Ball on small plate]().
 
-![under the plate](ball_on_big_plate_under_the_plate.jpg)
+{{< figure src="ball_on_big_plate_under_the_plate.jpg" caption="Under the plate" >}}
 
-Design documents of the ribs and others are also on the [GitHub page](https://github.com/pidan1231239/ball_on_big_plate).
+Design documents of the reinforcing ribs and others are also on the [GitHub page](https://github.com/pidan1231239/ball_on_big_plate).
 
-![ribs](650板加强筋激光切割.dwg.png)
-![cardan joint](ball_on_big_plate_universal_joint.jpg)
-![rod](ball_on_big_plate_ball_rod.jpg)
+{{< figure src="650板加强筋激光切割.dwg.png" caption="Reinforcing ribs" >}}
+{{< figure src="ball_on_big_plate_universal_joint.jpg" caption="Cardan joint" >}}
+{{< figure src="ball_on_big_plate_ball_rod.jpg" caption="Servo with connecting rod" >}}
 
 The camera is supported by carbon fiber tubes like in [Ball on small plate](). And the same LED circle is installed around the camera.
 
-![LED](ball_on_big_plate_led.jpg)
+{{< figure src="ball_on_big_plate_led.jpg" caption="LED around camera" >}}
 
 The Raspberry Pi 3b is hanged beyond the camera to reduce the load on the servos.
 
-![the complete work](featured.jpg)
+{{< figure src="featured.jpg" caption="The complete work" >}}
 
 After the work was done and tested by ourselves, we packed it with cardboard then handed it over to the competition organizer.
 
-![package](IMG_20170812_225850_001.jpg)
+{{< figure src="IMG_20170812_225850_001.jpg" caption="Complete work packed with cardboard, kinda like a house" >}}
 
 ## Final test
 
