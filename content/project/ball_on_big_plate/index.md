@@ -115,3 +115,9 @@ The Raspberry Pi 3b is hanged beyond the camera to reduce the load on the servos
 After the work was done and tested by ourselves, we packed it with cardboard then handed it over to the competition organizer.
 
 ![package](IMG_20170812_225850_001.jpg)
+
+## Final test
+
+After a successful test in front of the judges of Sichuan division and a small test on our electronic design capabilities, we stepped into our journey to Xi'an. Here show some photos taken along the trip.
+
+{{< gallery album="xian" >}} 
