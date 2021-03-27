@@ -107,7 +107,7 @@ Given a single color image,
 - Graph Convolutional Network (GCN) is proven to be good at resolving context information in the task of scene graph generation
 
 ## Pipeline
-![pipeline](pipeline.png)
+{{< figure src="pipeline.png" caption="Our proposed pipeline. We initialize the layout estimation and 3D object poses with LEN and ODN from prior work, then refine them with Scene Graph Convolutional Network (SGCN). We utilize a Local Implicit Embedding Network (LIEN) to encode latent code for LDIF decoder and to extract implicit features for SGCN. With the help of LDIF and marching cube algorithm, object meshes are extracted then rotated, scaled, and put into places to construct the scene." >}}
 
 The proposed system consists of two stages, i.e., the initial estimation stage, and the refinement stage. 
 In the initial estimation stage, a 2D detector is first adopted to extract the 2D bounding box from the input image, followed by an Object Detection Network (ODN) to recover the object poses as 3D bounding boxes and a new Local Implicit Embedding Network (LIEN) to extract the implicit local shape information from the image directly, which can further be decoded to infer 3D geometry.
@@ -115,6 +115,6 @@ The input image is also fed into a Layout Estimation Network (LEN) to produce a 
 In the refinement stage, a novel Scene Graph Convolutional Network (SGCN) is designed to refine the initial predictions via the scene context information.
 
 ## Results
-![results](results.png)
+{{< figure src="results.png" caption="Qualitative comparison on object detection and scene reconstruction. We compare object detection results with Total3D and ground truth in both oblique view and camera view. The results show that our method gives more accurate bounding box estimation and with less intersection. We compare scene reconstruction results with Total3D in camera view and observe more reasonable object poses." >}}
 
-*Qualitative comparison on object detection and scene reconstruction.* We compare object detection results with Total3D and ground truth in both oblique view and camera view. The results show that our method gives more accurate bounding box estimation and with less intersection. We compare scene reconstruction results with Total3D in camera view and observe more reasonable object poses.
+
