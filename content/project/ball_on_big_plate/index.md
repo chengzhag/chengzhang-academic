@@ -110,7 +110,7 @@ The camera is supported by carbon fiber tubes like in [Ball on small plate](). A
 
 The Raspberry Pi 3b is hanged beyond the camera to reduce the load on the servos.
 
-![the complete work](IMG_20170810_113026.jpg)
+![the complete work](featured.jpg)
 
 After the work was done and tested by ourselves, we packed it with cardboard then handed it over to the competition organizer.
 
