@@ -44,6 +44,7 @@ tags:
 - 3D Reconstruction
 - 3D Detection
 - 3D Scene Understanding
+- Layout Estimation
 
 # Display this page in the Featured widget?
 featured: true
@@ -66,7 +67,7 @@ url_video: ''
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
   caption: 'Scene reconstruction comparison'
-  focal_point: ""
+  focal_point: Smart
   preview_only: false
 
 # Associated Projects (optional).
