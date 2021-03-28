@@ -50,9 +50,9 @@ tags:
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links:
+- name: arXiv
+  url: 'https://arxiv.org/abs/2103.06422'
 
 url_pdf: 'https://arxiv.org/pdf/2103.06422'
 url_code: 'https://github.com/pidan1231239/Implicit3DUnderstanding'
