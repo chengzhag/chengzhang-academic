@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Cheng Zhang # Website name
-baseurl: 'https://chengzhang.netlify.app/' # Website URL
+baseurl: 'https://chengzhag.github.io/' # Website URL
 copyright: '' # Footer text, e.g. '© {year} Me'
 
 ############################
