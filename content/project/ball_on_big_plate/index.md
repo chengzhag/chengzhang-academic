@@ -66,30 +66,31 @@ gallery_item:
 ---
 ## Introduction
 
-Ball on Big Plate project is a work of team made up with three people. We are fortunate enough to get the first prize with this in [2017NUEDC](https://www2.renesas.cn/zh-cn/about/university-program/nuedc/2017.html). 
-
-I was responsible for building the structure and programming STM32 and Raspberry Pi. Code and document [here](https://github.com/pidan1231239/ball_on_big_plate). The other two teammates are [shicaiwei123](https://github.com/shicaiwei123) and [zianglei](https://github.com/zianglei). Sadly that [yoyolalala](https://github.com/yoyolalala) left the team before the contest. The preparation projects below can not be done without her. I'd like to thank her here.
-
-The final work has been handed in to our school and there will be no plan to write a detailed document for it. This page tells the story behind it.
+This project is a work of team of 3, which includes [shicaiwei123](https://github.com/shicaiwei123) and [zianglei](https://github.com/zianglei). 
+The preparations of the contest are done with the help of [yoyolalala](https://github.com/yoyolalala).
+I was responsible for building mechanical structures and embedded programming (i.e. STM32, Raspberry Pi).
+We are lucky to have received the first prize in [2017NUEDC](https://www2.renesas.cn/zh-cn/about/university-program/nuedc/2017.html). 
+The final work has been handed in to our school thus details will not be provided. 
+However, code and document can be found [here](https://github.com/pidan1231239/ball_on_big_plate). 
 
 > The ball-on-plate system is a promoted version of the traditional ball-on-beam control problem. The problem consists of a plate which its deviation can be manipulated in two perpendicular directions. The goal is to carry the ball moving on the plate to a desired position, that is to control a freely rolling ball on a specific position or moving on a trajectory on the plate. - [Modelling and Control of Ball-Plate System](http://web.engr.illinois.edu/~khashab2/files/2011_LinearControl/16.pdf)
 > {{< figure src="ball-on-plate_system.png" caption="Ball-on-plate system" >}}
 
-Specifically in this project, according to the contest requirements, the system is supposed to move a ball between any two of nine evenly distributed circles drawn on the plate and avoids other circles. The plate must have a size around 65cm*65cm. The [document](滚球控制系统（B题）.pdf) shows the distribution of the circles.
+Specifically in this project, according to the contest requirements, the system is supposed to move a ball between any two of nine evenly distributed circles and avoids the others. The plate must have a size around 65cm*65cm. The [document](滚球控制系统（B题）.pdf) shows the distribution of the circles.
 
 ---
 ## The Contest
 
-[NUEDC](https://www2.renesas.cn/zh-cn/about/university-program/nuedc/2017.html) is one of the largest electronic design competitions in China. The competition last three and a half days. Four categories of more than ten subjects are published on the official website on the day it begins. Participants usually prepare for a long time before the competition. The competition in 2017 which I attended started from August 9 to August 12. Our team started preparing about four months in advance. 
+[NUEDC](https://www2.renesas.cn/zh-cn/about/university-program/nuedc/2017.html) is one of the largest electronic design contest for undergraduate students in China. The contest lasts three and a half days. More than ten topics of four types including control, measurement, communication and power are published in the first day morning, indicating the start of the contest. Participants usually prepare for a long time before the contest. We attended the contest in 2017 starting from August 9th to 12th. Our team started the preparation four months in advance. 
 
-I was responsible for building the structure and programming STM32 and Raspberry Pi. Although I had got some experience with programming, I barely knew the basics of control system. However, I chose the control system direction to prepare because of my interest in it.
+Although I had got some experience with programming, I barely knew the basics of control system. However, I chose this type of topic just in the interest of it.
 
 In the preparation process, we learned from five projects, three of which are listed below.
 - [Rotary Inverted Pendulum]({{< relref "../rotary_inverted_pendulum" >}})
 - [Ball on Beam]({{< relref "../ball_on_beam" >}})
 - [Ball on Small Plate]({{< relref "../ball_on_small_plate" >}})
 
-Sadly, I've got no video demo of the final work since we were too busy moving forward. So let's jump into the details of the design.
+Sadly, no video demo was taken for the limit of time.
 
 ---
 ## Platform
@@ -98,26 +99,29 @@ Sadly, I've got no video demo of the final work since we were too busy moving fo
 - STM32F103 minimum system board
 - PC with Visual Studio and VisualGDB installed
 
-The Raspberry Pi is developed with C++ language using Raspberry toolchain provided by [VisualGDB](https://visualgdb.com/) (tutorial [here](https://visualgdb.com/tutorials/raspberry/crosscompiler/)). The STM32 is developed with C++ language using Arm toolchain provided by [VisualGDB](https://visualgdb.com/) (tutorial [here](https://visualgdb.com/tutorials/arm/stm32/)). The Raspberry runs OpenCV program and sends the results to STM32 through UART.
+The Raspberry Pi is developed with C++ using Raspberry Pi toolchain provided by [VisualGDB](https://visualgdb.com/) (tutorial [here](https://visualgdb.com/tutorials/raspberry/crosscompiler/)).
+It deals with the machine vision tasks and sends the results to STM32 through UART.
 
-I made use of a C++ API written for STM32 named [ebox](https://github.com/eboxmaker/eBox_STM32F1). Although it saved me a lot of time then, I found [mbed](https://www.mbed.com/) even easier than it after the competition. By the way, it was said that Arduino is not allowed in the competition.
+The STM32 is developed with C++ language using Arm toolchain provided by [VisualGDB](https://visualgdb.com/) (tutorial [here](https://visualgdb.com/tutorials/arm/stm32/)).
+A C++ API for STM32 ([Ebox](https://github.com/eboxmaker/eBox_STM32F1)) was used as a replacement of ardunio, which is not allowed in the contest.
 
 ---
 ## Mechanical structure
 
-The final work uses a PCB motherboard made in [Ball on Small Plate project]({{< relref "../ball_on_small_plate" >}}) to put the electronic modules together. 
+The final work uses a PCB motherboard (designed by [shicaiwei123](https://github.com/shicaiwei123)) same as [Ball on Small Plate project]({{< relref "../ball_on_small_plate" >}}) to connect modular electronic parts. 
 
 {{< figure src="3.jpg" caption="PCB mother board" >}}
 
-The 65cm*65cm plate is made of light wood laminate board.
+The 65cm*65cm plate is made of laminated balsa wood board.
 
 {{< figure src="ball_on_big_plate_camera_support.jpg" caption="The plate" >}}
 
-There are ribs below the plate to support it. The dynamic structure of the plate is same as [Ball on small plate]({{< relref "../ball_on_small_plate" >}}).
+We design metre-shaped ribs to further reinforce the plate.
+We follow [Ball on small plate]({{< relref "../ball_on_small_plate" >}}) to support the plate with a universal joint in the center and drive the board with two servos using ball joint rods as connection.
 
 {{< figure src="ball_on_big_plate_under_the_plate.jpg" caption="Under the plate" >}}
 
-Design documents of the reinforcing ribs and others are also on the [GitHub page](https://github.com/pidan1231239/ball_on_big_plate).
+Design documents of the reinforcing ribs are also available [here](https://github.com/pidan1231239/ball_on_big_plate).
 
 {{< figure src="650板加强筋激光切割.dwg.png" caption="Reinforcing ribs" >}}
 
@@ -125,7 +129,8 @@ Design documents of the reinforcing ribs and others are also on the [GitHub page
 
 {{< figure src="ball_on_big_plate_ball_rod.jpg" caption="Servo with connecting rod" >}}
 
-The camera is supported by carbon fiber tubes like in [Ball on small plate]({{< relref "../ball_on_small_plate" >}}). And the same LED circle is installed around the camera.
+The camera is supported by carbon fiber tubes like in [Ball on small plate]({{< relref "../ball_on_small_plate" >}}). 
+And the same ring light is installed around the camera to provide better illumination.
 
 {{< figure src="ball_on_big_plate_led.jpg" caption="LED around camera" >}}
 
@@ -133,13 +138,13 @@ The Raspberry Pi 3b is hanged beyond the camera to reduce the load on the servos
 
 {{< figure src="featured.jpg" caption="The complete work" >}}
 
-After the work was done and tested by ourselves, we packed it with cardboard then handed it over to the competition organizer.
+The final work is packed with cardboard then submitted to the competition organizer.
 
 {{< figure src="IMG_20170812_225850_001.jpg" caption="Complete work packed with cardboard, kinda like a house" >}}
 
 ---
 ## Final test
 
-After a successful test in front of the judges of Sichuan division and a small test on our electronic design capabilities, we stepped into our journey to Xi'an. Here show some photos taken along the trip.
+After a successful test in front of the judges of Sichuan division, follwed by a basic on-site electronic design test, we went to Xi'an for the final test. Below shows some photos taken along the trip.
 
 {{< gallery album="xian" >}} 

@@ -49,41 +49,37 @@ slides: ""
 ---
 ## Introduction
 
-Rotary Inverted Pendulum is built with an encoder, a brush motor, a STM32F103 board. No rotation limit. Capable of setting target angle, non-stop swinging and automatically swinging up.
-
-Rotary Inverted Pendulum project is a work of team. The other two teammates are [shicaiwei123](https://github.com/shicaiwei123) and [yoyolalala](https://github.com/yoyolalala). 
-
-Code and document [here](https://github.com/pidan1231239/inverted_pendulum). Platform details [here]({{< relref "../ball_on_big_plate" >}}).
+Rotary Inverted Pendulum is built with an encoder, a brush motor, a STM32F103 board, and has no rotation limit. It is capable of setting target angle, non-stop swinging and automatically swinging up.
+This project is a work of team of 3, which includes [shicaiwei123](https://github.com/shicaiwei123) and [yoyolalala](https://github.com/yoyolalala). 
+Code and documents are available [here](https://github.com/pidan1231239/inverted_pendulum). Platform details Code and documents are available [here]({{< relref "../ball_on_big_plate" >}}).
 
 ---
 ## Demo
-
-Primary demo with very limited precision and robustness is shown below.
 
 {{< youtube R4VLmF_X5qM >}}
 
 ---
 ## Mechanical structure
 
-I use an optical encoder to measure the angle of the pendulum. The absolute angle of the pendulum need calibrate every time after reset.
+An optical encoder is used to measure the angle of the pendulum. Thus calibration needs to be down by relaxing the pendulum to get the absolute angle every time after reset.
 
-{{< figure src="IMG_20170409_204205.jpg" caption="Optical encoder" >}}
+{{< figure src="IMG_20170409_204205.jpg" caption="Optical encoder" width="20%">}}
 
-A slip ring is used to prevent the winding of the wire.
+A slip ring (or collector ring) is used to prevent the winding of the wire.
 
-{{< figure src="稿定设计导出-20180604-225745.jpg" caption="Slip ring" >}}
+{{< figure src="稿定设计导出-20180604-225745.jpg" caption="Slip ring" width="20%">}}
 
-The DC brush motor with gearbox and magnetic encoder is driven by a TB6612FNG model controlled with PWM signal. A 3s lithium battery powers the system like the following projects.
+The DC brush motor with reduction gearbox and magnetic encoder is driven by a TB6612FNG model controlled controled with PWM signal. A 3-ceils lithium battery is used as power.
 
-{{< figure src="IMG_20170504_112659.jpg" caption="Complete circuit board" >}}
+{{< figure src="IMG_20170504_112659.jpg" caption="Complete circuit board"  width="50%">}}
 
-The mechanical structure includes three round mounting plates to mount slip ring, motor, and quick-release plate. The plates are connected with hexagonal copper pillars. The whole structure is mounted to a tripod through the quick-release plate. 
+The mechanical structure consists of three round plates which supports the slip ring, motor, and a quick-release plate. The round plates are connected with hexagonal copper pillars. The whole structure is mounted to a tripod through the quick-release plate. 
 
-The round plates are rendered as acrylic plate below. But they are made of carbon fiber in the final work.
+<!-- The round plates are rendered as acrylic plate below. But they are made of carbon fiber in the final work. -->
 
-{{< figure src="Snipaste_2018-06-05_07-40-03.png" caption="The core mechanical structure" >}}
+{{< figure src="Snipaste_2018-06-05_07-40-03.png" caption="The core mechanical structure"  width="20%">}}
 
-{{< figure src="84C~Z{NZ1N42UWZE8$K2QQ9.png" caption="The complete mechanical structure" >}}
+{{< figure src="84C~Z{NZ1N42UWZE8$K2QQ9.png" caption="The complete mechanical structure"  width="20%">}}
 
 ---
 ## Software design
@@ -96,4 +92,4 @@ The round plates are rendered as acrylic plate below. But they are made of carbo
 
 The swing-up and stabilizing operation and the changes between different modes are modeled as a state machine.
 
-{{< figure src="倒立摆状态机.png" caption="State machine for swing-up and stabilizing operation" >}}
+{{< figure src="倒立摆状态机.png" caption="State machine for swing-up and stabilizing operation" width="80%" >}}

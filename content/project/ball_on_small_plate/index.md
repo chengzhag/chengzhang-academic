@@ -49,16 +49,12 @@ slides: ""
 ---
 ## Introduction
 
-Ball on Small Plate is built with a Raspberry Zero, a camera, two servos, a STM32F103 board. Capable of setting target coordinate, circle around the center with adjustable radius.
-
-Ball on Small Plate project is a work of team. The other two teammates are [shicaiwei123](https://github.com/shicaiwei123) and [yoyolalala](https://github.com/yoyolalala). 
-
-Code and document [here](https://github.com/pidan1231239/ball_on_plate). Platform details [here]({{< relref "../ball_on_big_plate" >}}).
+Ball on Small Plate is built with a Raspberry Zero, a camera, two servos, a STM32F103 board, and is capable of setting target coordinate, circling around the center with adjustable radius.
+This project is a work of team of 3, which includes [shicaiwei123](https://github.com/shicaiwei123) and [yoyolalala](https://github.com/yoyolalala). 
+Code and documents are available [here](https://github.com/pidan1231239/ball_on_plate). Platform details are discussed [here]({{< relref "../ball_on_big_plate" >}}).
 
 ---
 ## Demo
-
-Primary demo with very limited precision and robustness is shown below.
 
 {{< youtube UgZbSz2ecN0 >}}
 
@@ -67,28 +63,28 @@ Primary demo with very limited precision and robustness is shown below.
 
 ### First version
 
-The 20cm*20cm plate is made of 1mm thick black glass fiber board. In the first version shown in the video, the plate is covered with white paper to provide contrast between ball and plate. Below shows the original plate.
+The 20cm*20cm plate is made of 1mm black glass fiber board. In the first version shown in the video, the plate is covered with white paper to provide more contrast between ball and plate. Below shows the original plate.
 
 {{< figure src="IMG_20170619_162559.jpg" caption="Deisigning the mechanical structure" >}}
 
-The plate is supported by a universal joint with 2 degrees of freedom. Two servos control the angle of the plate through ball bearing connecting rods.
+The plate is supported with a universal joint in the center and has 2 degrees of freedom. The angle of the plate is controled by two servos with ball joint rods connecting the servos and the plate.
 
 {{< figure src="IMG_20170619_172950.jpg" caption="Installation of plate and two servos" >}}
 
-In this first version. The camera and a Raspberry Pi Zero is beyond the plate and fixed to the base. In this case, the area of the plate must be segmented and projected into a square. The noise introduced in this progress is one of the reasons for the jitter in the video. 
+In this first version. The camera is fixed to the base, which requires extra procedure to segment the plate from background and warp back to squre. This introduces noise to the positioning of the ball, which is the major reason for the jittering in the video. 
 
 {{< figure src="cap_VID_20170624_154918_00_00_02_01.jpg" caption="Installation of camera and Raspberry Pi Zero" >}}
 
 ### Second version
 
-I managed to reduce the jitter by fixing the camera with carbon fiber tubes to the plate in the second version. The plate itself is also changed to yellow. A Raspberry Pi 3b is hanged beyond the camera.
+By fixing the camera to the plate with carbon fiber tubes, we managed to avoid the noise. The Raspberry Pi 3b is hanged beyond the camera to reduce the load on the servos. The plate itself is also changed to yellow thus no paper is needed. This reduces friction between the ball and the plate.
 
 {{< figure src="8.jpg" caption="Camera is connected to the plate to reduce jitter" >}}
 
-A LED circle is around the camera for illustration.
+A ring light is installed around the camera for better illumination.
 
 {{< figure src="6.jpg" caption="Camera and LED installation" >}}
 
-Below shows the PCB board also used in the later project [Ball on Big Plate]({{< relref "../ball_on_big_plate" >}}). 
+Below shows the PCB board installed on the base, which is later used in project [Ball on Big Plate]({{< relref "../ball_on_big_plate" >}}). 
 
 {{< figure src="ball_on_big_plate_pcb.jpg" caption="PCB mother board" >}}

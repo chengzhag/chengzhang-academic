@@ -49,13 +49,11 @@ slides: ""
 ---
 ## Introduction
 
-Ball on Beam is built with a Raspberry Zero, a camera, one servo, a STM32F103 board.
-Ball on Beam project is a work of team. The other two teammates are [shicaiwei123](https://github.com/shicaiwei123) and [yoyolalala](https://github.com/yoyolalala). 
-Code and document [here](https://github.com/pidan1231239/ball_on_beam). Platform details [here]({{< relref "../ball_on_big_plate" >}}).
+Ball on Beam is built with a Raspberry Zero, a camera, a servo, and a STM32F103 board.
+This project is a work of team of 3, which includes [shicaiwei123](https://github.com/shicaiwei123) and [yoyolalala](https://github.com/yoyolalala). 
+Code and documents are available [here](https://github.com/pidan1231239/ball_on_beam). Platform details are discussed [here]({{< relref "../ball_on_big_plate" >}}).
 
 ---
 ## Demo
-
-Primary demo with very limited precision and robustness is shown below.
 
 {{< youtube za6t0JMttOk >}}
