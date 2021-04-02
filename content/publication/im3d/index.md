@@ -28,11 +28,11 @@ publishDate: "2017-01-01T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: []
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: IEEE Conference on Computer Vision and Pattern Recognition (**CVPR**)
+publication: IEEE Conference on Computer Vision and Pattern Recognition
+publication_short: CVPR
 
 abstract: ""
 
@@ -96,6 +96,23 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
 
+
+<center>
+  <a href="https://chengzhag.github.io/">Cheng Zhang</a> 
+  &nbsp; &nbsp;
+  <a href="https://zhpcui.github.io/">Zhaopeng Cui</a> 
+  &nbsp; &nbsp;
+  <a href="https://www.zhangyinda.com/">Yinda Zhang</a> 
+  &nbsp; &nbsp;
+  <a href="https://scholar.google.com/citations?user=4y0QncgAAAAJ&hl=en">Bing Zeng</a> 
+  &nbsp; &nbsp;
+  <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>
+  &nbsp; &nbsp;
+  <a href="http://www.liushuaicheng.org/">Shuaicheng Liu</a>
+</center>
+
+{{< figure src="featured.png" >}}
+
 ---
 ## Abstract
 We present a new pipeline for holistic 3D scene understanding from a single image, which could predict object shape, object pose, and scene layout. As it is a highly ill-posed problem, existing methods usually suffer from inaccurate estimation of both shapes and layout especially for the cluttered scene due to the heavy occlusion between objects. We propose to utilize the latest deep implicit representation to solve this challenge. We not only propose an image-based local structured implicit network to improve the object shape estimation, but also refine 3D object pose and scene layout via a novel implicit scene graph neural network that exploits the implicit local object features. A novel physical violation loss is also proposed to avoid incorrect context between objects. Extensive experiments demonstrate that our method outperforms the state-of-the-art methods in terms of object shape, scene layout estimation, and 3D object detection.
@@ -114,7 +131,6 @@ Given a single color image,
 </center>
 
 <center>
-
   <!-- {{< cta cta_text="arXiv" cta_link="https://arxiv.org/abs/2103.06422" cta_new_tab="false" >}} -->
 
   <!-- <a href="https://arxiv.org/abs/2103.06422" class="btn btn-primary px-3 py-3">Paper</a> -->
@@ -138,17 +154,16 @@ Given a single color image,
   <a href="https://github.com/pidan1231239/Implicit3DUnderstanding" class="btn btn-outline-primary" target="_blank">
   GitHub
   </a>
-
 </center>
 
 <!-- <center>
-<a href="https://arxiv.org/abs/2103.06422">[arXiv]</a> 
-&nbsp; &nbsp;
-<a href="https://arxiv.org/pdf/2103.06422">[Paper]</a> 
-&nbsp; &nbsp;
-<a href="02192-supp.pdf">[Supp]</a> 
-&nbsp; &nbsp;
-<a href="https://github.com/pidan1231239/Implicit3DUnderstanding">[GitHub]</a>
+  <a href="https://arxiv.org/abs/2103.06422">[arXiv]</a> 
+  &nbsp; &nbsp;
+  <a href="https://arxiv.org/pdf/2103.06422">[Paper]</a> 
+  &nbsp; &nbsp;
+  <a href="02192-supp.pdf">[Supp]</a> 
+  &nbsp; &nbsp;
+  <a href="https://github.com/pidan1231239/Implicit3DUnderstanding">[GitHub]</a>
 </center> -->
 
 ---
