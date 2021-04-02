@@ -21,6 +21,9 @@ date: "2030-06-01T13:00:00Z"
 date_end: "2030-06-01T15:00:00Z"
 all_day: false
 
+# Is this an unpublished draft?
+draft: true
+
 # Schedule page publish date (NOT talk date).
 publishDate: "2017-01-01T00:00:00Z"
 
