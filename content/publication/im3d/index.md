@@ -96,19 +96,41 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
 
+## [<center>CVPR 2021</center>](http://cvpr2021.thecvf.com/)
 
 <center>
-  <a href="https://chengzhag.github.io/">Cheng Zhang</a> 
+  <a href="https://chengzhag.github.io/" target="_blank">Cheng Zhang</a>
+  <sup>2</sup>
   &nbsp; &nbsp;
-  <a href="https://zhpcui.github.io/">Zhaopeng Cui</a> 
+  <a href="https://zhpcui.github.io/" target="_blank">Zhaopeng Cui</a>
+  <sup>1</sup>
   &nbsp; &nbsp;
-  <a href="https://www.zhangyinda.com/">Yinda Zhang</a> 
+  <a href="https://www.zhangyinda.com/" target="_blank">Yinda Zhang</a>
+  <sup>3</sup>
   &nbsp; &nbsp;
-  <a href="https://scholar.google.com/citations?user=4y0QncgAAAAJ&hl=en">Bing Zeng</a> 
+  <a href="https://scholar.google.com/citations?user=4y0QncgAAAAJ&hl=en" target="_blank">Bing Zeng</a>
+  <sup>2</sup>
   &nbsp; &nbsp;
-  <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a>
+  <a href="https://people.inf.ethz.ch/pomarc/" target="_blank">Marc Pollefeys</a>
+  <sup>4</sup>
   &nbsp; &nbsp;
-  <a href="http://www.liushuaicheng.org/">Shuaicheng Liu</a>
+  <a href="http://www.liushuaicheng.org/" target="_blank">Shuaicheng Liu</a>
+  <sup>2</sup>
+</center>
+
+<center>
+  <sup>1</sup>
+  <a href="http://www.cad.zju.edu.cn/english.html" target="_blank">State Key Lab of CAD & CG, Zhejiang University</a> 
+  <!-- &nbsp; &nbsp; -->
+  <br />
+  <sup>2</sup>
+  <a href="https://en.uestc.edu.cn/" target="_blank">University of Electronic Science and Technology of China</a> 
+  &nbsp; &nbsp;
+  <sup>3</sup>
+  <a href="https://www.ai.google/" target="_blank">Google</a> 
+  &nbsp; &nbsp;
+  <sup>4</sup>
+  <a href="https://ethz.ch/en.html" target="_blank">ETH Zurich</a> 
 </center>
 
 {{< figure src="featured.png" >}}
@@ -152,7 +174,7 @@ Given a single color image,
   </a>
   &nbsp; &nbsp;
   <a href="https://github.com/pidan1231239/Implicit3DUnderstanding" class="btn btn-outline-primary" target="_blank">
-  GitHub
+  Code
   </a>
 </center>
 
