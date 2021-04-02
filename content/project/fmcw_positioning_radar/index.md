@@ -46,6 +46,7 @@ url_video: ""
 slides: ""
 ---
 
+---
 ## Introduction
 
 FMCW Positioning Radar project is a work of team made up of three people. We were trying to get the qualification to attend [ESDC](http://nuedc.sjtu.edu.cn/CN/content.aspx?info_lb=37&flag=2) through this project. Sadly, we were out of the game in the stage of school contest.
@@ -75,6 +76,7 @@ The project uses a USRP N210 with an LFRX  daughter board. SDR is not an importa
 - [Digital Communication Systems Engineering Using Software Defined Radio](http://ecewp.ece.wpi.edu/wordpress/wireless/textbooks/sdrlabs/): a tutorial of SDR using Simulink
 
 
+---
 ## Hardware
 
 The hardware design can be introduced in two parts, RF front end and FMCW generator. The design references the projects and the papers below:
@@ -108,6 +110,7 @@ The mbed board detects the trigger edge and overlay current antenna pair number 
 
 {{< figure src="FMCW射频前端.png" caption="RF front end" >}}
 
+---
 ## Software
 
 Software part includes ADF4159 evaluation board configuration, mbed code, and Simulink model. 
@@ -134,6 +137,7 @@ The mbed board switches antenna pairs after every trigger edge from the ADF4159 
 
 All the models are in the [simulink](https://github.com/pidan1231239/fmcw_positioning_radar/tree/master/simulink) folder. [RadarImagingAndPositioning.slx](https://github.com/pidan1231239/fmcw_positioning_radar/blob/master/simulink/RadarImagingAndPositioning.slx) block implements the basic signal processing logic and output the 2D heat map and target position. The data processing flow is shown in the presentation above. [usrp_4t12r_heatmap.slx](https://github.com/pidan1231239/fmcw_positioning_radar/blob/master/simulink/usrp_4t12r_heatmap.slx)  connects the basic blocks to show the imaging result and targets. For more information about using USRP with Simulink, see the Introduction section above.
 
+---
 ## Results
 
 In the experimental stage, I built a system with 1 Tx and 3 Rx.

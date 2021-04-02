@@ -46,6 +46,7 @@ url_video: "https://youtube.com/watch?v=UgZbSz2ecN0"
 slides: ""
 ---
 
+---
 ## Introduction
 
 Ball on Small Plate is built with a Raspberry Zero, a camera, two servos, a STM32F103 board. Capable of setting target coordinate, circle around the center with adjustable radius.
@@ -54,12 +55,14 @@ Ball on Small Plate project is a work of team. The other two teammates are [shic
 
 Code and document [here](https://github.com/pidan1231239/ball_on_plate). Platform details [here]({{< relref "../ball_on_big_plate" >}}).
 
+---
 ## Demo
 
 Primary demo with very limited precision and robustness is shown below.
 
 {{< youtube UgZbSz2ecN0 >}}
 
+---
 ## Mechanical structure
 
 ### First version

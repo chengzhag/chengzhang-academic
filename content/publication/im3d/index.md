@@ -28,13 +28,13 @@ publishDate: "2017-01-01T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["1"]
+publication_types: []
 
 # Publication name and optional abbreviated publication name.
-publication: IEEE Conference on Computer Vision and Pattern Recognition, 2021
-publication_short: CVPR 2021
+publication: ""
+publication_short: IEEE Conference on Computer Vision and Pattern Recognition (**CVPR**)
 
-abstract: We present a new pipeline for holistic 3D scene understanding from a single image, which could predict object shape, object pose, and scene layout. As it is a highly ill-posed problem, existing methods usually suffer from inaccurate estimation of both shapes and layout especially for the cluttered scene due to the heavy occlusion between objects. We propose to utilize the latest deep implicit representation to solve this challenge. We not only propose an image-based local structured implicit network to improve the object shape estimation, but also refine 3D object pose and scene layout via a novel implicit scene graph neural network that exploits the implicit local object features. A novel physical violation loss is also proposed to avoid incorrect context between objects. Extensive experiments demonstrate that our method outperforms the state-of-the-art methods in terms of object shape, scene layout estimation, and 3D object detection.
+abstract: ""
 
 # Summary. An optional shortened abstract.
 summary: We present a new pipeline which takes a single image as input, estimates layout and object poses, then reconstructs the scene with Signed Distance Function (SDF) representation.
@@ -96,17 +96,22 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
 
+---
+## Abstract
+We present a new pipeline for holistic 3D scene understanding from a single image, which could predict object shape, object pose, and scene layout. As it is a highly ill-posed problem, existing methods usually suffer from inaccurate estimation of both shapes and layout especially for the cluttered scene due to the heavy occlusion between objects. We propose to utilize the latest deep implicit representation to solve this challenge. We not only propose an image-based local structured implicit network to improve the object shape estimation, but also refine 3D object pose and scene layout via a novel implicit scene graph neural network that exploits the implicit local object features. A novel physical violation loss is also proposed to avoid incorrect context between objects. Extensive experiments demonstrate that our method outperforms the state-of-the-art methods in terms of object shape, scene layout estimation, and 3D object detection.
 
-## 3D Scene Understanding 
+<!-- ## 3D Scene Understanding 
 Given a single color image,
 - Estimate the room layout, including object categories and poses in 3D space
-- Reconstruct mesh of individual object
+- Reconstruct mesh of individual object -->
 
+---
 ## Motivations
 - Implicit representation like Signed Distance Function (SDF) can be used to detect collision and propagate gradients
 - And together with structured representation (LDIF), the shapes can be learned better and more shape priors can be provided for relationship understanding
 - Graph Convolutional Network (GCN) is proven to be good at resolving context information in the task of scene graph generation
 
+---
 ## Pipeline
 {{< figure src="pipeline.png" caption="Our proposed pipeline. We initialize the layout estimation and 3D object poses with LEN and ODN from prior work, then refine them with Scene Graph Convolutional Network (SGCN). We utilize a Local Implicit Embedding Network (LIEN) to encode latent code for LDIF decoder and to extract implicit features for SGCN. With the help of LDIF and marching cube algorithm, object meshes are extracted then rotated, scaled, and put into places to construct the scene." >}}
 
@@ -115,6 +120,7 @@ In the initial estimation stage, a 2D detector is first adopted to extract the 2
 The input image is also fed into a Layout Estimation Network (LEN) to produce a 3D layout bounding box and relative camera pose.
 In the refinement stage, a novel Scene Graph Convolutional Network (SGCN) is designed to refine the initial predictions via the scene context information.
 
+---
 ## Results
 {{< figure src="results.png" caption="Qualitative comparison on object detection and scene reconstruction. We compare object detection results with Total3D and ground truth in both oblique view and camera view. The results show that our method gives more accurate bounding box estimation and with less intersection. We compare scene reconstruction results with Total3D in camera view and observe more reasonable object poses." >}}
 

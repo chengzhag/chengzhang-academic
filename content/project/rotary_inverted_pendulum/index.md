@@ -46,6 +46,7 @@ url_video: "https://www.youtube.com/watch?v=R4VLmF_X5qM"
 slides: ""
 ---
 
+---
 ## Introduction
 
 Rotary Inverted Pendulum is built with an encoder, a brush motor, a STM32F103 board. No rotation limit. Capable of setting target angle, non-stop swinging and automatically swinging up.
@@ -54,12 +55,14 @@ Rotary Inverted Pendulum project is a work of team. The other two teammates are 
 
 Code and document [here](https://github.com/pidan1231239/inverted_pendulum). Platform details [here]({{< relref "../ball_on_big_plate" >}}).
 
+---
 ## Demo
 
 Primary demo with very limited precision and robustness is shown below.
 
 {{< youtube R4VLmF_X5qM >}}
 
+---
 ## Mechanical structure
 
 I use an optical encoder to measure the angle of the pendulum. The absolute angle of the pendulum need calibrate every time after reset.
@@ -82,6 +85,7 @@ The round plates are rendered as acrylic plate below. But they are made of carbo
 
 {{< figure src="84C~Z{NZ1N42UWZE8$K2QQ9.png" caption="The complete mechanical structure" >}}
 
+---
 ## Software design
 
 > Please refer to [Study on PID Control of a Single Inverted Pendulum System](http://en.cnki.com.cn/Article_en/CJFDTOTAL-JZDF2007S1010.htm) for the PID control system.

@@ -63,6 +63,7 @@ gallery_item:
   caption: Mutton soup with bread of Xi'an
 ---
 
+---
 ## Introduction
 
 Ball on Big Plate project is a work of team made up with three people. We are fortunate enough to get the first prize with this in [2017NUEDC](https://www2.renesas.cn/zh-cn/about/university-program/nuedc/2017.html). 
@@ -76,6 +77,7 @@ The final work has been handed in to our school and there will be no plan to wri
 
 Specifically in this project, according to the contest requirements, the system is supposed to move a ball between any two of nine evenly distributed circles drawn on the plate and avoids other circles. The plate must have a size around 65cm*65cm. The [document](滚球控制系统（B题）.pdf) shows the distribution of the circles.
 
+---
 ## The Contest
 
 [NUEDC](https://www2.renesas.cn/zh-cn/about/university-program/nuedc/2017.html) is one of the largest electronic design competitions in China. The competition last three and a half days. Four categories of more than ten subjects are published on the official website on the day it begins. Participants usually prepare for a long time before the competition. The competition in 2017 which I attended started from August 9 to August 12. Our team started preparing about four months in advance. 
@@ -89,6 +91,7 @@ In the preparation process, we learned from five projects, three of which are li
 
 Sadly, I've got no video demo of the final work since we were too busy moving forward. So let's jump into the details of the design.
 
+---
 ## Platform
 
 - Raspberry Pi Zero and Raspberry Pi 3b with OpenCV installed
@@ -99,6 +102,7 @@ The Raspberry Pi is developed with C++ language using Raspberry toolchain provid
 
 I made use of a C++ API written for STM32 named [ebox](https://github.com/eboxmaker/eBox_STM32F1). Although it saved me a lot of time then, I found [mbed](https://www.mbed.com/) even easier than it after the competition. By the way, it was said that Arduino is not allowed in the competition.
 
+---
 ## Mechanical structure
 
 The final work uses a PCB motherboard made in [Ball on Small Plate project]({{< relref "../ball_on_small_plate" >}}) to put the electronic modules together. 
@@ -133,6 +137,7 @@ After the work was done and tested by ourselves, we packed it with cardboard the
 
 {{< figure src="IMG_20170812_225850_001.jpg" caption="Complete work packed with cardboard, kinda like a house" >}}
 
+---
 ## Final test
 
 After a successful test in front of the judges of Sichuan division and a small test on our electronic design capabilities, we stepped into our journey to Xi'an. Here show some photos taken along the trip.
