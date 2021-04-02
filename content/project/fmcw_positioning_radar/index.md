@@ -170,11 +170,17 @@ The system is further expanded to 4 Tx and 12 Rx, which allows 3D imaging.
 
 The following GIF is the 3D imaging projected to the front view, showing a person drawing a circle in the air with a corner reflector.
 
-{{< figure src="yLoCut_200kHz_800rps_1rpf_4t12r_ztest_circle_reflector.gif" caption="Front view heatmap" >}}
+<figure>
+  <img src="yLoCut_200kHz_800rps_1rpf_4t12r_ztest_circle_reflector.gif"/>
+  <figcaption>Front view heatmap</figcaption>
+</figure>
 
 The GIF below shows the 2D imaging from above with target detection activated. A person is walking around in the distance of about 3 meters. The y-axis indicates the round distance of radar signal.
 
-{{< figure src="heatMapTarget.gif" caption="Top-down view heatmap" width="40%">}}
+<figure>
+  <img src="heatMapTarget.gif" width="40%"/>
+  <figcaption>Top-down view heatmap</figcaption>
+</figure>
 
 We tried to extract the signal strength vertical axis of person target doing squatting in the 10th second. However, as the radio waves in this frequency acts more like mirror reflection on the human body, the angle of the reflection surface becomes a issue as mentioned in [RF-Capture](http://rfcapture.csail.mit.edu/). This makes the height of a person unpredictable for our system. 
 
