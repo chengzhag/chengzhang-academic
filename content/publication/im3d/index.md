@@ -54,7 +54,7 @@ links:
 - name: arXiv
   url: 'https://arxiv.org/abs/2103.06422'
 
-url_pdf: 'https://arxiv.org/pdf/2103.06422'
+url_pdf: ''
 url_code: 'https://github.com/pidan1231239/Implicit3DUnderstanding'
 url_dataset: ''
 url_poster: ''
@@ -104,6 +104,52 @@ We present a new pipeline for holistic 3D scene understanding from a single imag
 Given a single color image,
 - Estimate the room layout, including object categories and poses in 3D space
 - Reconstruct mesh of individual object -->
+
+---
+## Paper
+<!-- ![page1](02192_页面_01.png)![page3](02192_页面_03.png)![page5](02192_页面_05.png)![page7](02192_页面_07.png) -->
+
+<center>
+  {{< gallery album="pages" >}}
+</center>
+
+<center>
+
+  <!-- {{< cta cta_text="arXiv" cta_link="https://arxiv.org/abs/2103.06422" cta_new_tab="false" >}} -->
+
+  <!-- <a href="https://arxiv.org/abs/2103.06422" class="btn btn-primary px-3 py-3">Paper</a> -->
+
+  <a href="#" class="btn btn-outline-primary js-cite-modal" data-filename="/publication/im3d/cite.bib">
+  Cite
+  </a>
+  &nbsp; &nbsp;
+  <a href="https://arxiv.org/abs/2103.06422" class="btn btn-outline-primary" target="_blank">
+  arXiv
+  </a> 
+  &nbsp; &nbsp;
+  <a href="https://arxiv.org/pdf/2103.06422" class="btn btn-outline-primary" target="_blank">
+  Paper
+  </a>
+  &nbsp; &nbsp;
+  <a href="02192-supp.pdf" class="btn btn-outline-primary" target="_blank">
+  Supp
+  </a>
+  &nbsp; &nbsp;
+  <a href="https://github.com/pidan1231239/Implicit3DUnderstanding" class="btn btn-outline-primary" target="_blank">
+  GitHub
+  </a>
+
+</center>
+
+<!-- <center>
+<a href="https://arxiv.org/abs/2103.06422">[arXiv]</a> 
+&nbsp; &nbsp;
+<a href="https://arxiv.org/pdf/2103.06422">[Paper]</a> 
+&nbsp; &nbsp;
+<a href="02192-supp.pdf">[Supp]</a> 
+&nbsp; &nbsp;
+<a href="https://github.com/pidan1231239/Implicit3DUnderstanding">[GitHub]</a>
+</center> -->
 
 ---
 ## Motivations
