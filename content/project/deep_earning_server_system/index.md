@@ -63,9 +63,13 @@ For new users and admins, [documents](https://github.com/chengzhag/nas_directory
 
 Our team has 5 existing servers, each with 4 x 1080Ti and a system SSD. The problem is that every server is not able to install an extra 10 GbE Network Interface Card (NIC) since all PCIE ports are preserved for GPUs. Thus an NBASE-T switch is used to connect each server via 5 GbE USB NICs. (A more stable and affordable configuration might be using 10 GbE SFP+ switch with PCIE NIC.)
 
+{{< figure src="照片 012.jpg" caption="No space to install 10 GbE NIC for existing server" width="30%" >}}
+
 ### Storage
 
 We chose to use QNAP Network Attached Storage (NAS) TS-932X, which can accommodate 5 x 3.5-inch hard drives and 4 x 2.5-inch SSDs, and has dual 10GbE SFP+ ports. The performance of its ARM processor is quit as SSD cache is configured on each server, which makes it possible to load frequently used data from NAS at the first time.
+
+{{< figure src="IMG_20191107_161030.jpg" caption="NAS and switch" width="30%" >}}
 
 ## Software
 
