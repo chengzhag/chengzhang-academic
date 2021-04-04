@@ -77,17 +77,18 @@ We chose to use QNAP Network Attached Storage (NAS) TS-932X, which can accommoda
 
 We configure our NAS with a ```Public``` folder (contraining the git repo of [documents](https://github.com/chengzhag/nas_directory)) for [shared datasets](https://github.com/chengzhag/nas_directory/tree/master/datasets) storage, and a home folder for each user, allowing users to access their environment (e.g. anaconda), codes, and datasets on every server. QNAP NAS provides an easy-to-use operating system with serveral customizable services. In our cases, it is configured with the following services:
 
-- NFS server: for mounting storage on server
-- samba server: for mounting storage on client computers
-- LDAP server: centralized authorization and user management for both NAS and GPU server
+- NFS server: For mounting storage on server
+- samba server: For mounting storage on client computers
+- LDAP server: Centralized authorization and user management for both NAS and GPU server
 - Other services like Download Station, file management from browser, restoring from snapshot/recycle bin, Qsync, VPN, DDNS, and iperf3 are also available to users.
 
 ### Server
 
 Each server is installed with same version of Ubuntu and Nvidia GPU driver, and is configured with the following services:
 
-- autofs: automatically mount two types of folders (i.e. user home folders to ```/home``` and ```Public``` folder to ```/media```) through NFS
-- cachefilesd: local SSD cache for NFS
-- LDAP
+- autofs: Automatically mount two types of folders (i.e. user home folders to ```/home``` and ```Public``` folder to ```/media```) through NFS
+- cachefilesd: Local SSD cache for NFS
+- LDAP authentication: Configured with Pluggable Authentication Modules (PAM)
+- ThinLinc: Remote desktop
 
 With the configurations above, students can use the same username to login to NAS or any server, access their data or share datasets with others, and configure anaconda environments once to use them on all servers. A [shell script](https://github.com/chengzhag/nas_directory/blob/master/documents/server/initserver.sh) is used to configure servers. It is validated on Ubuntu 18 and might be used as a reference. For easier deployment and management of servers, virtual machine system (e.g. Proxmox) is installed on each server, with GPU passthrough configured. The difference between virtual machine and bare-metal Ubuntu is barely sensible.
