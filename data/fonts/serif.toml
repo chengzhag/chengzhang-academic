@@ -1,0 +1,11 @@
+# Font style metadata
+name = "Serif"
+
+# Optional Google font URL
+google_fonts = "family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&family=PT+Serif"
+
+# Font families
+heading_font = "PT Serif"
+body_font = "PT Serif"
+nav_font = "PT Serif"
+mono_font = "PT Serif"
