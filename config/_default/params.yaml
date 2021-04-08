@@ -93,7 +93,7 @@ show_related:
   page: false
   post: true
   project: true
-  publication: true
+  publication: false
   event: true
 reading_time: true
 section_pager: false
