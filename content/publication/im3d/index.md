@@ -200,6 +200,146 @@ The input image is also fed into a Layout Estimation Network (LEN) to produce a 
 In the refinement stage, a novel Scene Graph Convolutional Network (SGCN) is designed to refine the initial predictions via the scene context information.
 
 ---
+## Interactive Results
+
+<!-- model-viewer css -->
+<link rel="stylesheet" href="model-viewer.css">
+
+<!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<center>
+  <div class='container'>
+    <div class='row' >
+      <div class='column'>
+        <p class='header'>Input</p>
+      </div>
+      <div class='column'>
+        <p class='header'>Total3D</p>
+      </div>
+      <div class='column'>
+        <p class='header'>Ours</p>
+      </div>
+    </div>
+    <div class='row' >
+      <div class='column'>
+        <div id="card">
+          {{< figure class="input" src="input/002435.jpg" >}}
+        </div>
+      </div>
+      <div class='column'>
+        <div id="card">
+          <model-viewer src="total3d/2435_mesh.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" camera-target="2.7m -0.5m 0.1m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="176.9deg 64.23deg 10m" field-of-view="30deg">
+          </model-viewer> 
+        </div>
+      </div>
+      <div class ='column'>
+        <div id="card">
+          <model-viewer src="im3d/2435_mesh.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" camera-target="2.7m -0.5m 0.1m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="176.9deg 64.23deg 10m" field-of-view="30deg">
+          </model-viewer> 
+        </div>
+      </div>
+    </div>
+    <div class='row' >
+      <div class='column'>
+        <div id="card">
+          {{< figure class="input" src="input/000724.jpg" >}}
+        </div>
+      </div>
+      <div class='column'>
+        <div id="card">
+          <model-viewer src="total3d/724_mesh.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" camera-target="2m -0.5m 0.1m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="176.9deg 64.23deg 10m" field-of-view="30deg">
+          </model-viewer> 
+        </div>
+      </div>
+      <div class ='column'>
+        <div id="card">
+          <model-viewer src="im3d/724_mesh.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" camera-target="2m -0.5m 0.1m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="176.9deg 64.23deg 10m" field-of-view="30deg">
+          </model-viewer> 
+        </div>
+      </div>
+    </div>
+    <div class='row' >
+      <div class='column'>
+        <div id="card">
+          {{< figure class="input" src="input/000276.jpg" >}}
+        </div>
+      </div>
+      <div class='column'>
+        <div id="card">
+          <model-viewer src="total3d/276_mesh.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" camera-target="2.7m -0.5m 0.1m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="176.9deg 64.23deg 10m" field-of-view="30deg">
+          </model-viewer> 
+        </div>
+      </div>
+      <div class ='column'>
+        <div id="card">
+          <model-viewer src="im3d/276_mesh.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" camera-target="2.7m -0.5m 0.1m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="176.9deg 64.23deg 10m" field-of-view="30deg">
+          </model-viewer> 
+        </div>
+      </div>
+    </div>
+    <div class='row' >
+      <div class='column'>
+        <div id="card">
+          {{< figure class="input" src="input/001140.jpg" >}}
+        </div>
+      </div>
+      <div class='column'>
+        <div id="card">
+          <model-viewer src="total3d/1140_mesh.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" camera-target="2.7m -0.5m 0.1m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="176.9deg 64.23deg 10m" field-of-view="30deg">
+          </model-viewer> 
+        </div>
+      </div>
+      <div class ='column'>
+        <div id="card">
+          <model-viewer src="im3d/1140_mesh.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" camera-target="2.7m -0.5m 0.1m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="176.9deg 64.23deg 10m" field-of-view="30deg">
+          </model-viewer> 
+        </div>
+      </div>
+    </div>
+    <div class='row' >
+      <div class='column'>
+        <div id="card">
+          {{< figure class="input" src="input/000765.jpg" >}}
+        </div>
+      </div>
+      <div class='column'>
+        <div id="card">
+          <model-viewer src="total3d/765_mesh.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" camera-target="2m -0.5m 0.1m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="176.9deg 64.23deg 10m" field-of-view="30deg">
+          </model-viewer> 
+        </div>
+      </div>
+      <div class ='column'>
+        <div id="card">
+          <model-viewer src="im3d/765_mesh.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" camera-target="2m -0.5m 0.1m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="176.9deg 64.23deg 10m" field-of-view="30deg">
+          </model-viewer> 
+        </div>
+      </div>
+    </div>
+    <div class='row' >
+      <div class='column'>
+        <div id="card">
+          {{< figure class="input" src="input/001149.jpg" >}}
+        </div>
+      </div>
+      <div class='column'>
+        <div id="card">
+          <model-viewer src="total3d/1149_mesh.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" camera-target="2m -0.5m 0.1m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="0deg 64.23deg 10m" field-of-view="30deg">
+          </model-viewer> 
+        </div>
+      </div>
+      <div class ='column'>
+        <div id="card">
+          <model-viewer src="im3d/1149_mesh.glb" interaction-prompt="when-focused" camera-controls exposure="0.72" shadow-intensity="2.7" shadow-softness="0.84" camera-target="2m -0.5m 0.1m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 11.89m" camera-orbit="0deg 64.23deg 10m" field-of-view="30deg">
+          </model-viewer> 
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+
+
+---
 ## Results
 {{< figure src="results.png" caption="Qualitative comparison on object detection and scene reconstruction. We compare object detection results with Total3D and ground truth in both oblique view and camera view. The results show that our method gives more accurate bounding box estimation and with less intersection. We compare scene reconstruction results with Total3D in camera view and observe more reasonable object poses." >}}
 
