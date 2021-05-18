@@ -8,6 +8,16 @@
     margin: 0 auto 0 auto; 
 }
 
+.publication-header {
+    margin-bottom: 0.8em;
+}
+
+@media (min-width: 600px) {
+    .publication-header {
+        text-align: center;
+    }
+}
+
 // .article-metadata {
 //     font-size: 0.8rem;
 // }

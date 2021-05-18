@@ -96,9 +96,9 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
 
-## [<center>CVPR 2021</center>](http://cvpr2021.thecvf.com/)
+## [<div class="publication-header">CVPR 2021</div>](http://cvpr2021.thecvf.com/)
 
-<center>
+<div class="publication-header">
   <a href="https://chengzhag.github.io/" target="_blank">Cheng Zhang</a>
   <sup>2</sup>
   &nbsp; &nbsp;
@@ -116,9 +116,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
   &nbsp; &nbsp;
   <a href="http://www.liushuaicheng.org/" target="_blank">Shuaicheng Liu</a>
   <sup>2</sup>
-</center>
+</div>
 
-<center>
+<div class="publication-header">
   <sup>1</sup>
   <a href="http://www.cad.zju.edu.cn/english.html" target="_blank">State Key Lab of CAD & CG, Zhejiang University</a> 
   <!-- &nbsp; &nbsp; -->
@@ -131,7 +131,7 @@ Supplementary notes can be added here, including [code, math, and images](https:
   &nbsp; &nbsp;
   <sup>4</sup>
   <a href="https://ethz.ch/en.html" target="_blank">ETH Zurich</a> 
-</center>
+</div>
 
 {{< figure src="featured.png" >}}
 
