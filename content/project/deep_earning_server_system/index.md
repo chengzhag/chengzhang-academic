@@ -33,7 +33,7 @@ image:
 #   url: https://twitter.com/georgecushen
 
 links:
-- name: documents
+- name: Docs
   url: 'https://github.com/chengzhag/nas_directory'
 url_code: ""
 url_pdf: ""
@@ -55,7 +55,7 @@ For a small research team with more than a dozen of students, several servers wi
 
 To solve the above problems, a system is built with centralized network storage, server and user management, 10 GbE network, and per-server SSD cache. This can be used as a reference for small academic teams on deep learning or maybe small companies.
 
-For new users and admins, [documents](https://github.com/chengzhag/nas_directory) (in Chinese) are wrote to provide basic informations and regulations.
+For new users and admins, [documentation](https://github.com/chengzhag/nas_directory) (in Chinese) are wrote to provide basic informations and regulations.
 
 ## Hardware
 
@@ -75,7 +75,7 @@ We chose to use QNAP Network Attached Storage (NAS) TS-932X, which can accommoda
 
 ### NAS
 
-We configure our NAS with a ```Public``` folder (contraining the git repo of [documents](https://github.com/chengzhag/nas_directory)) for [shared datasets](https://github.com/chengzhag/nas_directory/tree/master/datasets) storage, and a home folder for each user, allowing users to access their environment (e.g. anaconda), codes, and datasets on every server. QNAP NAS provides an easy-to-use operating system with serveral customizable services. In our cases, it is configured with the following services:
+We configure our NAS with a ```Public``` folder (contraining the git repo of [documentation](https://github.com/chengzhag/nas_directory)) for [shared datasets](https://github.com/chengzhag/nas_directory/tree/master/datasets) storage, and a home folder for each user, allowing users to access their environment (e.g. anaconda), codes, and datasets on every server. QNAP NAS provides an easy-to-use operating system with serveral customizable services. In our cases, it is configured with the following services:
 
 - NFS server: For mounting storage on server
 - samba server: For mounting storage on client computers
