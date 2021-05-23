@@ -32,4 +32,4 @@ email: "chengzhag@std.uestc.edu.cn"
 superuser: true
 highlight_name: true
 ---
-I am a second-year master‘s student of machine learning and computer vision under the supervision of [Prof. Shuaicheng LIU](http://www.liushuaicheng.org/) at [University of Electronic Science and Technology of China](https://en.uestc.edu.cn/). During my master study, I worked closely with [Prof. Zhaopeng Cui](http://www.cad.zju.edu.cn/home/zhpcui/) and [Dr. Yinda Zhang](https://www.zhangyinda.com/). My research interests include 3D reconstruction, 3D detection, 3D scene understanding, etc. I received my Bachelor's degree at UESTC in 2019.
+I am a second-year Master's student of machine learning and computer vision under the supervision of [Prof. Shuaicheng LIU](http://www.liushuaicheng.org/) at [University of Electronic Science and Technology of China](https://en.uestc.edu.cn/). During my master study, I worked closely with [Prof. Zhaopeng Cui](http://www.cad.zju.edu.cn/home/zhpcui/) and [Dr. Yinda Zhang](https://www.zhangyinda.com/). My research interests include 3D reconstruction, 3D detection, 3D scene understanding, etc. I received my Bachelor's degree at UESTC in 2019.
