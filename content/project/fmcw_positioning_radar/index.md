@@ -49,7 +49,7 @@ slides: ""
 ---
 ## Introduction
 
-This project is a work of team of 3, which includes [hsuhaoo](https://github.com/hsuhaoo) and [Zijing Guan](/). We were luckily supported and guided by [Prof. Zhuang Jie](https://faculty.uestc.edu.cn/zhuangjie/en/index.htm). The project can be further extended to applications like fall detection for the elderly.
+This project is a work of team of 3, which includes [hsuhaoo](https://github.com/hsuhaoo) and [Zijing Guan](/). We were luckily supported and guided by [Prof. Jie Zhuang](https://faculty.uestc.edu.cn/zhuangjie/en/index.htm). The project can be further extended to applications like fall detection for the elderly.
 
 The radar works in the 2.7 GHz - 3.7 GHz band, and has 4 transmitting antennas and 12 receive antennas. With the power of less than 10 dBm, it can measure the distance of a person with a median of 5 cm. Within 5 meters, it has an positioning accuracy of about 20 cm. Without further tests, the maximum distance is unknown. However, it can indicate the existance of a person behind a 25 cm concrete wall.
 
