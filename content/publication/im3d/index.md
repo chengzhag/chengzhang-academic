@@ -61,7 +61,7 @@ url_poster: ''
 url_project: ''
 url_slides: ''
 url_source: ''
-url_video: ''
+url_video: 'https://www.youtube.com/watch?v=Kg0du7mFu60'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -100,13 +100,13 @@ Supplementary notes can be added here, including [code, math, and images](https:
 
 <div class="publication-header">
   <a href="https://chengzhag.github.io/" target="_blank">Cheng Zhang</a>
-  <sup>2</sup>
+  <sup>2</sup>*
   &nbsp; &nbsp;
   <a href="https://zhpcui.github.io/" target="_blank">Zhaopeng Cui</a>
-  <sup>1</sup>
+  <sup>1</sup>*
   &nbsp; &nbsp;
   <a href="https://www.zhangyinda.com/" target="_blank">Yinda Zhang</a>
-  <sup>3</sup>
+  <sup>3</sup>*
   &nbsp; &nbsp;
   <a href="https://scholar.google.com/citations?user=4y0QncgAAAAJ&hl=en" target="_blank">Bing Zeng</a>
   <sup>2</sup>
@@ -145,6 +145,11 @@ Given a single color image,
 - Reconstruct mesh of individual object -->
 
 ---
+## Video
+
+{{< youtube Kg0du7mFu60 >}}
+
+---
 ## Paper
 <!-- ![page1](02192_页面_01.png)![page3](02192_页面_03.png)![page5](02192_页面_05.png)![page7](02192_页面_07.png) -->
 
@@ -161,16 +166,20 @@ Given a single color image,
   Cite
   </a>
   &nbsp; &nbsp;
+  <a href="https://github.com/pidan1231239/Implicit3DUnderstanding" class="btn btn-outline-primary" target="_blank">
+  Code
+  </a>
+  &nbsp; &nbsp;
+  <a href="https://www.youtube.com/watch?v=Kg0du7mFu60" class="btn btn-outline-primary" target="_blank">
+  Video
+  </a>
+  &nbsp; &nbsp;
   <a href="https://arxiv.org/abs/2103.06422" class="btn btn-outline-primary" target="_blank">
   arXiv
   </a> 
   &nbsp; &nbsp;
   <a href="https://arxiv.org/pdf/2103.06422" class="btn btn-outline-primary" target="_blank">
   Paper
-  </a>
-  &nbsp; &nbsp;
-  <a href="https://github.com/pidan1231239/Implicit3DUnderstanding" class="btn btn-outline-primary" target="_blank">
-  Code
   </a>
 </center>
 
