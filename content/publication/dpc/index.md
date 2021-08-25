@@ -135,7 +135,7 @@ Supplementary notes can be added here, including [code, math, and images](https:
   <a href="https://www.ai.google/" target="_blank">Google</a>
 </div>
 
-{{< figure src="featured.png" >}}
+{{< figure width=90% src="teaser.png" >}}
 
 ---
 ## Abstract
@@ -180,7 +180,7 @@ Experiments demonstrate that our method outperforms existing methods on panorami
 
 ---
 ## Pipeline
-{{< figure width=80% src="pipeline.png" caption="Our proposed pipeline. We first do a bottom-up initialization with several SoTA methods and provide various features, including geometric, semantic, and appearance features of objects and layout. These are then fed into our proposed RGCN network to refine the initial object pose and estimate the relation among objects and layout. A relation optimization is adopted afterward to further adjust the 3d object arrangement to align with the 2D observation, conform with the predicted relation, and resolve physical collision." >}}
+{{< figure width=90% src="pipeline.png" caption="Our proposed pipeline. We first do a bottom-up initialization with several SoTA methods and provide various features, including geometric, semantic, and appearance features of objects and layout. These are then fed into our proposed RGCN network to refine the initial object pose and estimate the relation among objects and layout. A relation optimization is adopted afterward to further adjust the 3d object arrangement to align with the 2D observation, conform with the predicted relation, and resolve physical collision." >}}
 
 We first extract the whole-room layout under Manhattan World assumption and the initial object estimates including locations, sizes, poses, semantic categories, and latent shape codes. 
 These, along with extracted features, are then fed into the Relation-based Graph Convolutional Network (RGCN) for refinement and to estimate relations among objects and layout simultaneously.
@@ -304,6 +304,6 @@ Finally, the 3D shape is recovered by feeding the latent shape code into Local I
 
 ---
 ## Results
-{{< figure width=80% src="results.png" caption="Qualitative comparison on 3D object detection and scene reconstruction. We compare object detection and compare scene reconstruction results with Total3D-Pers and Im3D-Pers in both bird's eye view and panorama format." >}}
+{{< figure width=90% src="results.png" caption="Qualitative comparison on 3D object detection and scene reconstruction. We compare object detection and compare scene reconstruction results with Total3D-Pers and Im3D-Pers in both bird's eye view and panorama format." >}}
 
 
