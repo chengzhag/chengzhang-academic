@@ -180,7 +180,17 @@ Experiments demonstrate that our method outperforms existing methods on panorami
 
 ---
 ## Pipeline
-{{< figure width=90% src="pipeline.png" caption="Our proposed pipeline. We first do a bottom-up initialization with several SoTA methods and provide various features, including geometric, semantic, and appearance features of objects and layout. These are then fed into our proposed RGCN network to refine the initial object pose and estimate the relation among objects and layout. A relation optimization is adopted afterward to further adjust the 3d object arrangement to align with the 2D observation, conform with the predicted relation, and resolve physical collision." >}}
+
+<figure>
+  <div class="d-flex justify-content-center">
+    <div class="w-100">
+        <img alt="Our proposed pipeline. We first do a bottom-up initialization with several SoTA methods and provide various features, including geometric, semantic, and appearance features of objects and layout. These are then fed into our proposed RGCN network to refine the initial object pose and estimate the relation among objects and layout. A relation optimization is adopted afterward to further adjust the 3d object arrangement to align with the 2D observation, conform with the predicted relation, and resolve physical collision." srcset="
+               pipeline_anim.gif" src="pipeline_anim.gif" width="90%" loading="lazy" data-zoomable="" class="medium-zoom-image"></div>
+  </div>
+  <figcaption>
+      Our proposed pipeline. We first do a bottom-up initialization with several SoTA methods and provide various features, including geometric, semantic, and appearance features of objects and layout. These are then fed into our proposed RGCN network to refine the initial object pose and estimate the relation among objects and layout. A relation optimization is adopted afterward to further adjust the 3d object arrangement to align with the 2D observation, conform with the predicted relation, and resolve physical collision.
+  </figcaption>
+</figure>
 
 We first extract the whole-room layout under Manhattan World assumption and the initial object estimates including locations, sizes, poses, semantic categories, and latent shape codes. 
 These, along with extracted features, are then fed into the Relation-based Graph Convolutional Network (RGCN) for refinement and to estimate relations among objects and layout simultaneously.
