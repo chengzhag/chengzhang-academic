@@ -51,9 +51,9 @@ tags:
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-# - name: arXiv
-#   url: 'https://arxiv.org/abs/2103.06422'
+links:
+- name: arXiv
+  url: 'https://arxiv.org/abs/2108.10743'
 
 url_pdf: ''
 # url_code: 'https://github.com/pidan1231239/Implicit3DUnderstanding'
