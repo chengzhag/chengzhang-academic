@@ -52,11 +52,13 @@ featured: true
 
 # Custom links (uncomment lines below)
 links:
+- name: Code
+  url: 'https://github.com/chengzhag/DeepPanoContext'
 - name: arXiv
   url: 'https://arxiv.org/abs/2108.10743'
 
 url_pdf: ''
-# url_code: 'https://github.com/pidan1231239/Implicit3DUnderstanding'
+url_code: 'https://github.com/chengzhag/DeepPanoContext'
 url_dataset: ''
 url_poster: ''
 url_project: ''
@@ -161,10 +163,10 @@ Experiments demonstrate that our method outperforms existing methods on panorami
   <a href="#" class="btn btn-outline-primary js-cite-modal" data-filename="/publication/dpc/cite.bib">
   Cite
   </a>
-  <!-- <a href="https://github.com/pidan1231239/Implicit3DUnderstanding" class="btn btn-outline-primary" target="_blank">
+  <a href="https://github.com/chengzhag/DeepPanoContext" class="btn btn-outline-primary" target="_blank">
   Code
   </a>
-  <a href="https://www.youtube.com/watch?v=Kg0du7mFu60" class="btn btn-outline-primary" target="_blank">
+  <!-- <a href="https://www.youtube.com/watch?v=Kg0du7mFu60" class="btn btn-outline-primary" target="_blank">
   YouTube
   </a>
   <a href="https://www.bilibili.com/video/BV1By4y1g7c5/" class="btn btn-outline-primary" target="_blank">
