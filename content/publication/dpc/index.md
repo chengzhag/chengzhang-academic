@@ -147,10 +147,10 @@ In order to fully utilize the rich context information, we design a novel graph 
 Realizing the existing data are either with incomplete ground truth or overly-simplified scene, we present a new synthetic dataset with good diversity in room layout and furniture placement, and realistic image quality for total panoramic 3D scene understanding. 
 Experiments demonstrate that our method outperforms existing methods on panoramic scene understanding in terms of both geometry accuracy and object arrangement.
 
-<!-- ---
+---
 ## Video
 
-{{< youtube Kg0du7mFu60 >}} -->
+{{< youtube mO1EtUHnX4w >}}
 
 ---
 ## Paper
@@ -166,12 +166,12 @@ Experiments demonstrate that our method outperforms existing methods on panorami
   <a href="https://github.com/chengzhag/DeepPanoContext" class="btn btn-outline-primary" target="_blank">
   Code
   </a>
-  <!-- <a href="https://www.youtube.com/watch?v=Kg0du7mFu60" class="btn btn-outline-primary" target="_blank">
+  <a href="https://www.youtube.com/watch?v=mO1EtUHnX4w" class="btn btn-outline-primary" target="_blank">
   YouTube
   </a>
-  <a href="https://www.bilibili.com/video/BV1By4y1g7c5/" class="btn btn-outline-primary" target="_blank">
+  <a href="https://www.bilibili.com/video/BV1JU4y1w7Yu/" class="btn btn-outline-primary" target="_blank">
   bilibili
-  </a> -->
+  </a>
   <a href="https://arxiv.org/abs/2108.10743" class="btn btn-outline-primary" target="_blank">
   arXiv (Supp included)
   </a> 
