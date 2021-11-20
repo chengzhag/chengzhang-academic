@@ -25,7 +25,7 @@ education:
     - course: MEng in Information and Communication Engineering
       institution: University of Electronic Science and Technology of China
       year: 2022
-    - course: BSc in Internet of Things
+    - course: BEng in Internet of Things
       institution: University of Electronic Science and Technology of China
       year: 2019
 email: "chengzhag@std.uestc.edu.cn"
