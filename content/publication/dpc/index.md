@@ -52,8 +52,6 @@ featured: true
 
 # Custom links (uncomment lines below)
 links:
-- name: Code
-  url: 'https://github.com/chengzhag/DeepPanoContext'
 - name: arXiv
   url: 'https://arxiv.org/abs/2108.10743'
 
@@ -64,7 +62,7 @@ url_poster: ''
 url_project: ''
 url_slides: ''
 url_source: ''
-# url_video: 'https://www.youtube.com/watch?v=Kg0du7mFu60'
+url_video: 'https://www.youtube.com/watch?v=mO1EtUHnX4w'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
