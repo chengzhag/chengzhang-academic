@@ -136,7 +136,7 @@ Supplementary notes can be added here, including [code, math, and images](https:
 </div>
 
 <center>
-  <a href="#" class="btn btn-outline-primary js-cite-modal" data-filename="/publication/im3d/cite.bib">
+  <a href="#" class="btn btn-outline-primary js-cite-modal" data-filename="cite.bib">
   Cite
   </a>
   <a href="https://github.com/chengzhag/PanFusion" class="btn btn-outline-primary" target="_blank">
