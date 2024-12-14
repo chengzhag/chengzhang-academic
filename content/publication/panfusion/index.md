@@ -38,7 +38,7 @@ publication_short: CVPR
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: 
+summary: We introduce a novel dual-branch diffusion model named PanFusion to generate a 360-degree image from a text prompt.
 
 tags:
 - Deep Learning
