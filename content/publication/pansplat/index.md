@@ -50,7 +50,7 @@ featured: true
 # Custom links (uncomment lines below)
 links:
 - name: arXiv
-  url: ''
+  url: 'https://arxiv.org/abs/2412.12096'
 
 url_pdf: ''
 url_code: 'https://github.com/chengzhag/PanSplat'
@@ -144,10 +144,10 @@ Supplementary notes can be added here, including [code, math, and images](https:
   <a href="https://www.bilibili.com/video/BV1By4y1g7c5/" class="btn btn-outline-primary" target="_blank">
   bilibili
   </a> -->
-  <a href="." class="btn btn-outline-primary">
+  <a href="https://arxiv.org/abs/2412.12096" class="btn btn-outline-primary">
   arXiv
   </a> 
-  <a href="." class="btn btn-outline-primary">
+  <a href="https://arxiv.org/pdf/2412.12096" class="btn btn-outline-primary">
   Paper
   </a>
 </center>

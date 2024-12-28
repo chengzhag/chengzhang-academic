@@ -51,7 +51,7 @@ featured: true
 # Custom links (uncomment lines below)
 links:
 - name: arXiv
-  url: ''
+  url: 'https://arxiv.org/abs/2404.07949'
 
 url_pdf: ''
 url_code: 'https://github.com/chengzhag/PanFusion'
