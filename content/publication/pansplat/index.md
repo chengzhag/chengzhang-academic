@@ -31,8 +31,8 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: arXiv
-publication_short: arXiv
+publication: IEEE Conference on Computer Vision and Pattern Recognition
+publication_short: CVPR
 
 abstract: ""
 
@@ -94,7 +94,7 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
 
-## <div class="publication-header">arXiv 2024</div>
+## <div class="publication-header">CVPR 2025</div>
 
 
 <div class="publication-header">

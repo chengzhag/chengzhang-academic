@@ -96,7 +96,7 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
 
 
-## [<div class="publication-header">CVPR 2024 Hightlight</div>](https://cvpr.thecvf.com/Conferences/2024)
+## [<div class="publication-header">CVPR 2024 Highlight</div>](https://cvpr.thecvf.com/Conferences/2024)
 
 <div class="publication-header">
   <a href="https://chengzhag.github.io/" target="_blank">Cheng Zhang</a>
