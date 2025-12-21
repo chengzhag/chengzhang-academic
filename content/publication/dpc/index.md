@@ -33,7 +33,7 @@ publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
 publication: International Conference on Computer Vision
-publication_short: ICCV
+publication_short: ICCV 2021
 
 abstract: ""
 

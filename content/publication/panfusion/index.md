@@ -33,7 +33,7 @@ publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
 publication: IEEE Conference on Computer Vision and Pattern Recognition
-publication_short: CVPR
+publication_short: CVPR 2024
 
 abstract: ""
 
@@ -165,7 +165,7 @@ Generative models, e.g., Stable Diffusion, have enabled the creation of photorea
 ---
 ## Pipeline
 
-{{< figure src="pipeline.png" caption="Our proposed dual-branch PanFusion pipeline. The panorama branch (upper) provides global layout guidance and registers the perspective information to get seamless panorama output. The perspective branch (lower) harnesses the rich prior knowledge of Stable Diffusion (SD) and provides guidance to alleviate distortion under perspective projection. Both branches employ the same UNet backbone with shared weights, while finetuned with separate LoRA layers. Equirectangular-Perspective Projection Attention (EPPA) modules are plugged into different layers of the UNet to pass information between the two branches." >}}
+{{< figure width=80% src="pipeline.png" caption="Our proposed dual-branch PanFusion pipeline. The panorama branch (upper) provides global layout guidance and registers the perspective information to get seamless panorama output. The perspective branch (lower) harnesses the rich prior knowledge of Stable Diffusion (SD) and provides guidance to alleviate distortion under perspective projection. Both branches employ the same UNet backbone with shared weights, while finetuned with separate LoRA layers. Equirectangular-Perspective Projection Attention (EPPA) modules are plugged into different layers of the UNet to pass information between the two branches." >}}
 
 
 ---

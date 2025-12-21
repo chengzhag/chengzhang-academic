@@ -32,7 +32,7 @@ publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
 publication: IEEE Conference on Computer Vision and Pattern Recognition
-publication_short: CVPR
+publication_short: CVPR 2025
 
 abstract: ""
 
@@ -59,7 +59,7 @@ url_poster: ''
 url_project: ''
 url_slides: ''
 url_source: ''
-url_video: ''
+url_video: 'https://youtu.be/R3qIzL77ZSc'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -178,7 +178,7 @@ Experiments demonstrate that PanSplat achieves state-of-the-art results with sup
 ---
 ## Pipeline
 
-{{< figure src="pipeline.png" caption="Our proposed PanSplat pipeline. Given two wide-baseline panoramas, we first construct a hierarchical spherical cost volume using a Transformer-based FPN to extract feature pyramid and 2D U-Nets to integrate monocular depth priors for cost volume refinement. We then build Gaussian heads to generate a feature pyramid, which is later sampled with Fibonacci lattice and transformed to spherical 3D Gaussian pyramid. Finally, we unproject the Gaussian parameters for each level and view, consolidate them into a global representation, and splat it into novel views using a cubemap renderer. For simplicity, intermediate results of only a single view are shown." >}}
+{{< figure width=80% src="pipeline.png" caption="Our proposed PanSplat pipeline. Given two wide-baseline panoramas, we first construct a hierarchical spherical cost volume using a Transformer-based FPN to extract feature pyramid and 2D U-Nets to integrate monocular depth priors for cost volume refinement. We then build Gaussian heads to generate a feature pyramid, which is later sampled with Fibonacci lattice and transformed to spherical 3D Gaussian pyramid. Finally, we unproject the Gaussian parameters for each level and view, consolidate them into a global representation, and splat it into novel views using a cubemap renderer. For simplicity, intermediate results of only a single view are shown." >}}
 
 ---
 ## Interactive Demo
